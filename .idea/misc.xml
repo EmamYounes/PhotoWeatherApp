@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/border_button_green_background.xml" value="0.1395" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/buttom_background.xml" value="0.1395" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/edittext_background.xml" value="0.1395" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/edittext_background_dimmed.xml" value="0.1395" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/edittext_background_error.xml" value="0.1395" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/fill_button_green_background.xml" value="0.1395" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/grey_rounded_vw.xml" value="0.1395" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/ic_icons_add.xml" value="0.1395" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/ic_warning_circle_black.xml" value="0.1395" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/activity_add_weather.xml" value="0.21574074074074073" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/activity_base.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/activity_view_photo.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/bottom_button.xml" value="0.22" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/content_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/fragment_choose_picker.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/fragment_home.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/fragment_second.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/fragment_show_weather_information.xml" value="0.25" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/fragment_weather_information.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/ic_icons_add.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/loading_lottie_dialog.xml" value="0.26033519553072626" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/photo_fragment.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/weather_item.xml" value="0.22" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/menu/menu_main.xml" value="0.21574074074074073" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

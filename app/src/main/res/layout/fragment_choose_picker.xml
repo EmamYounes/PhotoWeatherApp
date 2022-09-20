@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_background"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:gravity="center_horizontal">
+
+        <View
+            android:layout_width="@dimen/_57sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@drawable/white_background_radius_2dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/camera_picker_tv"
+        style="@style/sfprotextmedium_cool_grey_13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/camera"
+        android:textColor="@color/slate_grey"
+        android:textSize="@dimen/_11ssp" />
+</LinearLayout>

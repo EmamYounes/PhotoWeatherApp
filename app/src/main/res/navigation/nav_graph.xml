@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.photoweatherapp.add_weather_story.view.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/PhotoFragment"
+        android:name="com.example.photoweatherapp.add_weather_story.view.PhotoFragment"
+        tools:layout="@layout/photo_fragment" />
+
+    <fragment
+        android:id="@+id/WeatherInformationFragment"
+        android:name="com.example.photoweatherapp.add_weather_story.view.WeatherInformationFragment"
+        tools:layout="@layout/fragment_weather_information" />
+
+
+    <fragment
+        android:id="@+id/ShowWeatherInformationFragment"
+        android:name="com.example.photoweatherapp.add_weather_story.view.ShowWeatherInformationFragment"
+        tools:layout="@layout/fragment_show_weather_information" />
+
+    <fragment
+        android:id="@+id/ShowWeatherItemFragment"
+        android:name="com.example.photoweatherapp.add_weather_story.view.ShowWeatherItemFragment"
+        tools:layout="@layout/fragment_show_weather_item" />
+
+</navigation>

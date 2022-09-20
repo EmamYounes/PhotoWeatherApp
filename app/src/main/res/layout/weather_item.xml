@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/pale_grey_two"
+    android:padding="@dimen/_12sdp"
+    tools:context=".add_weather_story.view.HomeFragment">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/add_place_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/edittext_background_dimmed"
+        android:paddingStart="@dimen/_11sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintTop_toBottomOf="@id/image_iv" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/edittext_background_dimmed"
+        android:paddingStart="@dimen/_11sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintTop_toBottomOf="@id/add_place_name" />
+
+    <TextView
+        android:id="@+id/weather_condition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/edittext_background_dimmed"
+        android:paddingStart="@dimen/_11sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temperature" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
