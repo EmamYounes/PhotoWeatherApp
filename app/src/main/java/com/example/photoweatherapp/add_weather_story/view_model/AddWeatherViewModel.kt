@@ -1,7 +1,7 @@
 package com.example.photoweatherapp.add_weather_story.view_model
 
 import androidx.lifecycle.ViewModel
-import com.example.photoweatherapp.add_weather_story.Models.WeatherModel
+import com.example.photoweatherapp.add_weather_story.data_classes.WeatherModel
 import com.example.photoweatherapp.add_weather_story.model.AddWeatherRepository
 import com.jakewharton.rxrelay2.BehaviorRelay
 import io.reactivex.Observable
@@ -51,6 +51,14 @@ class AddWeatherViewModel(
             .subscribe {
                 buttonEnabled.accept(it)
             })
+    }
+
+    fun getWeatherList(): List<WeatherModel>? {
+        return repository.getWeatherList()
+    }
+
+    fun saveWeatherInfo(model: WeatherModel) {
+        repository.saveWeatherInfo(model)
     }
 
     override fun onCleared() {

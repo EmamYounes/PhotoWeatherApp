@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.photoweatherapp.R
-import com.example.photoweatherapp.add_weather_story.Models.WeatherModel
+import com.example.photoweatherapp.add_weather_story.data_classes.WeatherModel
 import kotlinx.android.synthetic.main.weather_item.view.*
 
 class WeatherAdapter(

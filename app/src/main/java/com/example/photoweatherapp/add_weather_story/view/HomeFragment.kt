@@ -9,9 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.photoweatherapp.R
-import com.example.photoweatherapp.add_weather_story.Models.WeatherModel
 import com.example.photoweatherapp.add_weather_story.adapter.OnCLick
 import com.example.photoweatherapp.add_weather_story.adapter.WeatherAdapter
+import com.example.photoweatherapp.add_weather_story.data_classes.WeatherModel
 import com.example.photoweatherapp.add_weather_story.view_model.AddWeatherViewModel
 import com.example.photoweatherapp.base.BaseFragment
 import com.example.photoweatherapp.commons.ui.CameraCallBack
@@ -45,6 +45,31 @@ open class HomeFragment : BaseFragment(), CameraCallBack, KodeinAware, OnCLick {
         initRecyclerview(view)
         handleAddPhotoBtnAction(view)
         handleFabAddPhotoBtnAction(view)
+        callWeatherList(view)
+    }
+
+    private fun callWeatherList(view: View) {
+        val list = viewModel.getWeatherList()
+        list?.let {
+            if (it.isNotEmpty()) {
+                weatherAdapter.addList(it.toMutableList())
+                manageDataListView(view)
+            } else {
+                manageEmptyListView(view)
+            }
+        }
+    }
+
+    private fun manageDataListView(view: View) {
+        view.weather_rv.visibility = View.VISIBLE
+        view.fab_add_photo.visibility = View.VISIBLE
+        view.add_photo_Btn.visibility = View.GONE
+    }
+
+    private fun manageEmptyListView(view: View) {
+        view.weather_rv.visibility = View.GONE
+        view.fab_add_photo.visibility = View.GONE
+        view.add_photo_Btn.visibility = View.VISIBLE
     }
 
     private fun initRecyclerview(view: View) {

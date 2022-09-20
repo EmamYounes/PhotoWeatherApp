@@ -1,4 +1,4 @@
-package com.example.photoweatherapp.add_weather_story.Models
+package com.example.photoweatherapp.add_weather_story.data_classes
 
 data class WeatherModel(
     var imageByteArray: ByteArray,
