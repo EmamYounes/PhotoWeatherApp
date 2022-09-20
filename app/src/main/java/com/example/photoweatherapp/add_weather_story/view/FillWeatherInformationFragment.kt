@@ -8,11 +8,11 @@ import com.example.photoweatherapp.R
 import com.example.photoweatherapp.add_weather_story.view_model.AddWeatherViewModel
 import com.example.photoweatherapp.base.BaseFragment
 import kotlinx.android.synthetic.main.bottom_button.view.*
-import kotlinx.android.synthetic.main.fragment_weather_information.view.*
+import kotlinx.android.synthetic.main.fragment_fill_weather_information.view.*
 import org.kodein.di.KodeinAware
 import org.kodein.di.generic.instance
 
-class WeatherInformationFragment : BaseFragment(), KodeinAware {
+class FillWeatherInformationFragment : BaseFragment(), KodeinAware {
 
     override val kodein by kodein()
 
@@ -22,7 +22,7 @@ class WeatherInformationFragment : BaseFragment(), KodeinAware {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_weather_information, container, false)
+        return inflater.inflate(R.layout.fragment_fill_weather_information, container, false)
     }
 
 

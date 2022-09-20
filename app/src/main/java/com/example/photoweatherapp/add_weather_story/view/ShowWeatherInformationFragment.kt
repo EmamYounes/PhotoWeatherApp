@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.photoweatherapp.R
+import com.example.photoweatherapp.add_weather_story.data_classes.WeatherModel
 import com.example.photoweatherapp.add_weather_story.view_model.AddWeatherViewModel
 import com.example.photoweatherapp.base.BaseFragment
 import kotlinx.android.synthetic.main.bottom_button.view.*
@@ -50,6 +51,13 @@ class ShowWeatherInformationFragment : BaseFragment(), KodeinAware {
     private fun manageFinishBtn(view: View) {
         view.finish_btn.text = getString(R.string.submit)
         view.finish_btn.setOnClickListener {
+            val model = WeatherModel(
+                imageByteArray = viewModel.imageByteArray.value!!,
+                addPlaceName = viewModel.addPlaceName.value!!,
+                temperature = viewModel.temperature.value!!,
+                weatherCondition = viewModel.weatherCondition.value!!
+            )
+            viewModel.saveWeatherInfo(model)
             navigateToHome()
         }
         enableSubmitBtn(true, view.finish_btn)

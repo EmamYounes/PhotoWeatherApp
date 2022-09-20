@@ -43,7 +43,7 @@ class PhotoFragment : BaseFragment(), KodeinAware {
     private fun manageFinishBtn(view: View) {
         view.finish_btn.text = getString(R.string.next)
         view.finish_btn.setOnClickListener {
-            navigateTo(R.id.WeatherInformationFragment)
+            navigateTo(R.id.FillWeatherInformationFragment)
         }
     }
 }

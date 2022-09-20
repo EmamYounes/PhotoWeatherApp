@@ -145,7 +145,7 @@ open class HomeFragment : BaseFragment(), CameraCallBack, KodeinAware, OnCLick {
     override fun onItemClickListener(model: WeatherModel?) {
         model?.let {
             viewModel.weatherModelClicked.accept(it)
-            navigateTo(R.id.ShowWeatherItemFragment)
+            navigateTo(R.id.ShowChosenWeatherItemFragment)
         }
 
     }

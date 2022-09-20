@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.fragment_show_weather_item.view.*
 import org.kodein.di.KodeinAware
 import org.kodein.di.generic.instance
 
-class ShowWeatherItemFragment : BaseFragment(), KodeinAware {
+class ShowChosenWeatherItemFragment : BaseFragment(), KodeinAware {
 
     override val kodein by kodein()
 
@@ -22,7 +22,7 @@ class ShowWeatherItemFragment : BaseFragment(), KodeinAware {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_show_weather_item, container, false)
+        return inflater.inflate(R.layout.fragment_show_chosen_weather_item, container, false)
     }
 
 

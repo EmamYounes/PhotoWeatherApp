@@ -16,9 +16,9 @@
         tools:layout="@layout/photo_fragment" />
 
     <fragment
-        android:id="@+id/WeatherInformationFragment"
-        android:name="com.example.photoweatherapp.add_weather_story.view.WeatherInformationFragment"
-        tools:layout="@layout/fragment_weather_information" />
+        android:id="@+id/FillWeatherInformationFragment"
+        android:name="com.example.photoweatherapp.add_weather_story.view.FillWeatherInformationFragment"
+        tools:layout="@layout/fragment_fill_weather_information" />
 
 
     <fragment
@@ -27,8 +27,8 @@
         tools:layout="@layout/fragment_show_weather_information" />
 
     <fragment
-        android:id="@+id/ShowWeatherItemFragment"
-        android:name="com.example.photoweatherapp.add_weather_story.view.ShowWeatherItemFragment"
-        tools:layout="@layout/fragment_show_weather_item" />
+        android:id="@+id/ShowChosenWeatherItemFragment"
+        android:name="com.example.photoweatherapp.add_weather_story.view.ShowChosenWeatherItemFragment"
+        tools:layout="@layout/fragment_show_chosen_weather_item" />
 
 </navigation>
