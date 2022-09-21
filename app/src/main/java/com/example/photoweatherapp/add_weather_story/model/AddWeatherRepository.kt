@@ -9,7 +9,7 @@ class AddWeatherRepository(
 
     override suspend fun insert(model: WeatherModel) {
         val item = WeatherEntity(
-            imageByteArray = model.imageByteArray.toString(),
+            imageByteArray = model.imageByteArray,
             addPlaceName = model.addPlaceName,
             temperature = model.temperature,
             weatherCondition = model.weatherCondition
@@ -21,7 +21,7 @@ class AddWeatherRepository(
 
         return local.getWeatherList().map {
             WeatherModel(
-                imageByteArray = it.imageByteArray.toByteArray(),
+                imageByteArray = it.imageByteArray,
                 addPlaceName = it.addPlaceName,
                 temperature = it.temperature,
                 weatherCondition = it.weatherCondition,
