@@ -9,6 +9,7 @@ import com.example.photoweatherapp.R
 import com.example.photoweatherapp.add_weather_story.data_classes.WeatherModel
 import com.example.photoweatherapp.add_weather_story.view_model.AddWeatherViewModel
 import com.example.photoweatherapp.base.BaseFragment
+import com.example.photoweatherapp.data_base.entity.WeatherEntity
 import kotlinx.android.synthetic.main.bottom_button.view.*
 import kotlinx.android.synthetic.main.fragment_show_weather_information.view.*
 import kotlinx.coroutines.Dispatchers

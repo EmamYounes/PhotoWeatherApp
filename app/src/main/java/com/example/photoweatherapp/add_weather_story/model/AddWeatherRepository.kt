@@ -17,15 +17,15 @@ class AddWeatherRepository(
         local.insert(item)
     }
 
-    override suspend fun getWeatherList(): List<WeatherModel>? {
+    override suspend fun getWeatherList(): List<WeatherModel> {
 
-        return local.getWeatherList()?.map {
+        return local.getWeatherList().map {
             WeatherModel(
                 imageByteArray = it.imageByteArray.toByteArray(),
                 addPlaceName = it.addPlaceName,
                 temperature = it.temperature,
                 weatherCondition = it.weatherCondition,
             )
-        }?.toList()
+        }.toList()
     }
 }

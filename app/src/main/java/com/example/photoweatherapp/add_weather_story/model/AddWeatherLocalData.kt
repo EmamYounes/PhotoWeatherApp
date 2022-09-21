@@ -13,8 +13,8 @@ class AddWeatherLocalData(private val db: AppDatabase) :
         return text
     }
 
-    override suspend fun getWeatherList(): List<WeatherEntity>? {
-        return db.getWeatherDao().getWeatherList().value
+    override suspend fun getWeatherList(): List<WeatherEntity> {
+        return db.getWeatherDao().getWeatherList()
     }
 
 }

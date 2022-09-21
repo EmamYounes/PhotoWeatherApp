@@ -7,11 +7,11 @@ interface AddWeatherDataContract {
 
     interface Repository {
         suspend fun insert(model: WeatherModel)
-        suspend fun getWeatherList(): List<WeatherModel>?
+        suspend fun getWeatherList(): List<WeatherModel>
     }
 
     interface Local {
         suspend fun insert(model: WeatherEntity)
-        suspend fun getWeatherList(): List<WeatherEntity>?
+        suspend fun getWeatherList(): List<WeatherEntity>
     }
 }

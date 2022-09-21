@@ -14,6 +14,6 @@ interface WeatherDao {
      suspend fun insert(model: WeatherEntity)
 
     @Query("SELECT * FROM WeatherEntity")
-    suspend fun getWeatherList(): LiveData<List<WeatherEntity>>
+    suspend fun getWeatherList(): List<WeatherEntity>
 
 }
