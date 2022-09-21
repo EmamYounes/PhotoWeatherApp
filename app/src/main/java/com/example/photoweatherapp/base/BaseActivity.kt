@@ -1,29 +1,14 @@
 package com.example.photoweatherapp.base
 
-import android.os.Bundle
 import android.view.View
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.navigation.navOptions
 import com.example.photoweatherapp.R
 import kotlinx.android.synthetic.main.activity_base.*
 
 open class BaseActivity : AppCompatActivity() {
 
-    val options = navOptions {
-        anim {
-            enter = R.anim.slide_in_right
-            exit = R.anim.slide_out_left
-            popEnter = R.anim.slide_in_left
-            popExit = R.anim.slide_out_right
-        }
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_base)
-    }
 
     override fun setContentView(layoutResID: Int) {
         val constraintLayout: ConstraintLayout =
@@ -34,7 +19,25 @@ open class BaseActivity : AppCompatActivity() {
         super.setContentView(constraintLayout)
     }
 
-    fun showAttentionLayout(message: String, visible: Boolean, showClose: Boolean = true) {
+    fun setPageTitle(pageTitle: String) {
+        page_title.text = pageTitle
+    }
+
+    fun handleBackBtnAction() {
+        page_title.setOnClickListener {
+            this.onBackPressed()
+        }
+    }
+
+    fun hideBackBtn() {
+        back_btn.visibility = View.GONE
+    }
+
+    fun showBackBtn() {
+        back_btn.visibility = View.VISIBLE
+    }
+
+    fun showAttentionLayout(message: String = "", visible: Boolean, showClose: Boolean = true) {
 
         if (orange_layout != null) {
             if (visible)
@@ -62,4 +65,5 @@ open class BaseActivity : AppCompatActivity() {
         }
 
     }
+
 }

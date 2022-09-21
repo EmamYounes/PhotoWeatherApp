@@ -11,9 +11,9 @@ import com.example.photoweatherapp.data_base.entity.WeatherEntity
 interface WeatherDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun saveAllWeather(list: List<WeatherEntity>)
+     suspend fun insert(model: WeatherEntity)
 
     @Query("SELECT * FROM WeatherEntity")
-    fun getWeatherList(): LiveData<List<WeatherEntity>>
+    suspend fun getWeatherList(): LiveData<List<WeatherEntity>>
 
 }

@@ -10,14 +10,17 @@
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/edittext_background_error.xml" value="0.1395" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/fill_button_green_background.xml" value="0.1395" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/grey_rounded_vw.xml" value="0.1395" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/ic_close_black.xml" value="0.1" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/ic_edit.xml" value="0.1395" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/ic_icons_add.xml" value="0.1395" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/drawable/ic_warning_circle_black.xml" value="0.1395" />
-        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/activity_add_weather.xml" value="0.21574074074074073" />
-        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/activity_base.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/activity_add_weather.xml" value="0.1642512077294686" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/activity_base.xml" value="0.22" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/activity_view_photo.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/bottom_button.xml" value="0.22" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/content_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/fragment_choose_picker.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/fragment_fill_weather_information.xml" value="0.25" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/fragment_home.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/fragment_second.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/emamyounes/AndroidStudioProjects/PhotoWeatherApp/app/src/main/res/layout/fragment_show_chosen_weather_item.xml" value="0.27291666666666664" />

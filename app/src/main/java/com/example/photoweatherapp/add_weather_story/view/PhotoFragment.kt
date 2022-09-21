@@ -10,6 +10,7 @@ import com.example.photoweatherapp.base.BaseFragment
 import kotlinx.android.synthetic.main.bottom_button.view.*
 import kotlinx.android.synthetic.main.photo_fragment.view.*
 import org.kodein.di.KodeinAware
+import org.kodein.di.android.x.kodein
 import org.kodein.di.generic.instance
 
 class PhotoFragment : BaseFragment(), KodeinAware {
@@ -45,5 +46,9 @@ class PhotoFragment : BaseFragment(), KodeinAware {
         view.finish_btn.setOnClickListener {
             navigateTo(R.id.FillWeatherInformationFragment)
         }
+    }
+
+    override fun getPageTitle(): String {
+        return getString(R.string.show_image)
     }
 }

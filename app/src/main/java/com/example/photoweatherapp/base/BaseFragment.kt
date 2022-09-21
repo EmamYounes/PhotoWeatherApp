@@ -1,5 +1,7 @@
 package com.example.photoweatherapp.base
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
@@ -11,11 +13,13 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.NonNull
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.navigation.navOptions
 import com.example.photoweatherapp.R
 import com.example.photoweatherapp.commons.Utilities.Utilities
@@ -30,9 +34,11 @@ open class BaseFragment : Fragment() {
     private var dialog: LoadingDialog? = null
     protected val IMAGE_PICK_CODE = 1000
     protected val PICK_CAMERA = 0
+    private val RECORD_REQUEST_CODE = 101
 
 
-    val options = navOptions {
+
+    private val options = navOptions {
         anim {
             enter = R.anim.slide_in_right
             exit = R.anim.slide_out_left
@@ -48,8 +54,12 @@ open class BaseFragment : Fragment() {
     }
 
     open fun bindView(view: View) {
-
-
+         val baseActivity = activity as BaseActivity
+        baseActivity.setPageTitle(getPageTitle())
+        baseActivity.showBackBtn()
+        baseActivity.handleBackBtnAction()
+        baseActivity.showAttentionLayout(visible = false)
+        makeRequest()
     }
 
     private fun findMyNavController(@NonNull fragment: Fragment): NavController {
@@ -58,7 +68,6 @@ open class BaseFragment : Fragment() {
 
     fun showLoading() {
         val baseActivity = activity as BaseActivity
-
         if (!baseActivity.isFinishing && !baseActivity.isDestroyed) {
             dialog?.show()
         }
@@ -85,7 +94,9 @@ open class BaseFragment : Fragment() {
     }
 
     fun navigateTo(destinationId: Int, bundle: Bundle = bundleOf()) {
-        findMyNavController(this).navigate(destinationId, bundle, options)
+        val activity = activity as BaseActivity?
+        val navController = activity?.findNavController(R.id.nav_host_fragment)
+        navController!!.navigate(destinationId, bundle, options)
     }
 
     fun navigateUp() {
@@ -166,5 +177,29 @@ open class BaseFragment : Fragment() {
         imageView.setImageBitmap(
             decodedByte
         )
+    }
+
+    open fun getPageTitle(): String {
+        return getString(R.string.app_name)
+    }
+
+    private fun makeRequest() {
+        if (ContextCompat.checkSelfPermission(
+                this.requireContext(),
+                Manifest.permission.CAMERA
+            )
+            != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                requireActivity(),
+                arrayOf(
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                    Manifest.permission.READ_EXTERNAL_STORAGE,
+                    Manifest.permission.CAMERA,
+
+                    ),
+                RECORD_REQUEST_CODE
+            )
+        }
     }
 }

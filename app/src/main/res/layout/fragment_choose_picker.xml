@@ -30,4 +30,25 @@
         android:text="@string/camera"
         android:textColor="@color/slate_grey"
         android:textSize="@dimen/_11ssp" />
+
+    <View
+
+        android:id="@+id/Line_view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:background="@color/pale_grey_two" />
+
+    <TextView
+        android:id="@+id/gallery_picker_tv"
+        style="@style/sfprotextmedium_cool_grey_13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_26sdp"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/photo_amp_video_library"
+        android:textColor="@color/slate_grey" />
 </LinearLayout>

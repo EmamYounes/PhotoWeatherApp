@@ -56,6 +56,11 @@ class ChooseFileFragment() : BottomSheetDialogFragment() {
             listenr!!.onCameraClicked()
             dismiss()
         }
+
+        view.gallery_picker_tv.setOnClickListener {
+            listenr!!.onGalleryClicked()
+            dismiss()
+        }
     }
 
     companion object {

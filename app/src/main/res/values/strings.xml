@@ -22,4 +22,10 @@
     <string name="please_enter_the_temperature">Please enter the temperature</string>
     <string name="please_enter_the_weather_condition">Please enter the weather condition</string>
     <string name="enter_valid_data">Please enter a right data</string>
+    <string name="home">Home</string>
+    <string name="show_image">Show Image</string>
+    <string name="add_weather_info">"Add weather information "</string>
+    <string name="chosen_item">Chosen item</string>
+    <string name="Show_Weather_Info">Show Weather Information</string>
+    <string name="photo_amp_video_library"><![CDATA[Photo Library]]></string>
 </resources>

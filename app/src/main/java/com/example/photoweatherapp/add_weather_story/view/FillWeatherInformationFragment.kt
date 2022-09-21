@@ -10,6 +10,7 @@ import com.example.photoweatherapp.base.BaseFragment
 import kotlinx.android.synthetic.main.bottom_button.view.*
 import kotlinx.android.synthetic.main.fragment_fill_weather_information.view.*
 import org.kodein.di.KodeinAware
+import org.kodein.di.android.x.kodein
 import org.kodein.di.generic.instance
 
 class FillWeatherInformationFragment : BaseFragment(), KodeinAware {
@@ -65,5 +66,9 @@ class FillWeatherInformationFragment : BaseFragment(), KodeinAware {
                 enableSubmitBtn(it, view.finish_btn)
             }
         )
+    }
+
+    override fun getPageTitle(): String {
+        return getString(R.string.add_weather_info)
     }
 }

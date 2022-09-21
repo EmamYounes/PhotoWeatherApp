@@ -8,8 +8,9 @@ import com.example.photoweatherapp.R
 import com.example.photoweatherapp.add_weather_story.view_model.AddWeatherViewModel
 import com.example.photoweatherapp.base.BaseFragment
 import kotlinx.android.synthetic.main.bottom_button.view.*
-import kotlinx.android.synthetic.main.fragment_show_weather_item.view.*
+import kotlinx.android.synthetic.main.fragment_show_chosen_weather_item.view.*
 import org.kodein.di.KodeinAware
+import org.kodein.di.android.x.kodein
 import org.kodein.di.generic.instance
 
 class ShowChosenWeatherItemFragment : BaseFragment(), KodeinAware {
@@ -55,5 +56,9 @@ class ShowChosenWeatherItemFragment : BaseFragment(), KodeinAware {
 
     private fun manageFinishBtn(view: View) {
         view.finish_btn.visibility = View.GONE
+    }
+
+    override fun getPageTitle(): String {
+        return getString(R.string.chosen_item)
     }
 }

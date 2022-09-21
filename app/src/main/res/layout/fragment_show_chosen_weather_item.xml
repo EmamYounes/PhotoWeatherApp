@@ -23,9 +23,11 @@
         android:layout_height="@dimen/_36sdp"
         android:layout_marginTop="@dimen/_12sdp"
         android:background="@drawable/edittext_background_dimmed"
+        android:gravity="center_vertical"
         android:paddingStart="@dimen/_11sdp"
         android:paddingEnd="@dimen/_8sdp"
-        android:textSize="@dimen/_9ssp"
+        android:textColor="@color/seemore_color"
+        android:textSize="@dimen/_15ssp"
         app:layout_constraintTop_toBottomOf="@id/image_iv" />
 
     <TextView
@@ -34,9 +36,11 @@
         android:layout_height="@dimen/_36sdp"
         android:layout_marginTop="@dimen/_12sdp"
         android:background="@drawable/edittext_background_dimmed"
+        android:gravity="center_vertical"
         android:paddingStart="@dimen/_11sdp"
         android:paddingEnd="@dimen/_8sdp"
-        android:textSize="@dimen/_9ssp"
+        android:textColor="@color/seemore_color"
+        android:textSize="@dimen/_15ssp"
         app:layout_constraintTop_toBottomOf="@id/add_place_name" />
 
     <TextView
@@ -45,9 +49,11 @@
         android:layout_height="@dimen/_36sdp"
         android:layout_marginTop="@dimen/_12sdp"
         android:background="@drawable/edittext_background_dimmed"
+        android:gravity="center_vertical"
         android:paddingStart="@dimen/_11sdp"
         android:paddingEnd="@dimen/_8sdp"
-        android:textSize="@dimen/_9ssp"
+        android:textColor="@color/seemore_color"
+        android:textSize="@dimen/_15ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/temperature" />

@@ -22,14 +22,12 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/add_place_name"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_36sdp"
+            android:layout_height="@dimen/_42sdp"
             android:background="@drawable/edittext_background"
             android:hint="@string/please_enter_place_name"
             android:maxLength="30"
             android:maxLines="1"
-            android:paddingStart="@dimen/_11sdp"
-            android:paddingEnd="@dimen/_8sdp"
-            android:textSize="@dimen/_9ssp" />
+            android:textSize="@dimen/_15ssp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -44,14 +42,12 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/temperature"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_36sdp"
+            android:layout_height="@dimen/_42sdp"
             android:background="@drawable/edittext_background"
             android:hint="@string/please_enter_the_temperature"
             android:maxLength="30"
             android:maxLines="1"
-            android:paddingStart="@dimen/_11sdp"
-            android:paddingEnd="@dimen/_8sdp"
-            android:textSize="@dimen/_9ssp" />
+            android:textSize="@dimen/_15ssp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -66,14 +62,12 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/weather_condition"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_36sdp"
+            android:layout_height="@dimen/_42sdp"
             android:background="@drawable/edittext_background"
             android:hint="@string/please_enter_the_weather_condition"
             android:maxLength="30"
             android:maxLines="1"
-            android:paddingStart="@dimen/_11sdp"
-            android:paddingEnd="@dimen/_8sdp"
-            android:textSize="@dimen/_9ssp" />
+            android:textSize="@dimen/_15ssp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <include

@@ -42,7 +42,7 @@
 
 
                 <TextView
-                    android:id="@+id/servicetitle"
+                    android:id="@+id/page_title"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -51,6 +51,8 @@
                     android:layout_weight="1"
                     android:drawablePadding="@dimen/_8sdp"
                     android:gravity="center_vertical"
+                    android:textColor="@color/summer_sky"
+                    android:textSize="@dimen/_20sdp"
                     android:theme="@style/sfprosemibold_dark_grey_17"
                     tools:text="Title" />
 
@@ -84,15 +86,20 @@
                     android:visibility="gone" />
             </LinearLayout>
 
-
         </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/seemore_color" />
 
         <LinearLayout
             android:id="@+id/orange_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/macaroni_and_cheese"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <ImageView
                 android:id="@+id/imageView"

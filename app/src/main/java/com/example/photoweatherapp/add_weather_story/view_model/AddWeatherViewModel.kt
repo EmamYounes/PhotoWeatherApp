@@ -53,12 +53,12 @@ class AddWeatherViewModel(
             })
     }
 
-    fun getWeatherList(): List<WeatherModel>? {
+    suspend fun getWeatherList(): List<WeatherModel>? {
         return repository.getWeatherList()
     }
 
-    fun saveWeatherInfo(model: WeatherModel) {
-        repository.saveWeatherInfo(model)
+    suspend fun saveWeatherInfo(model: WeatherModel) {
+        repository.insert(model)
     }
 
     override fun onCleared() {

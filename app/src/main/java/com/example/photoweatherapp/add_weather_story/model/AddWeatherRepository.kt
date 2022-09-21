@@ -1,35 +1,27 @@
 package com.example.photoweatherapp.add_weather_story.model
 
 import com.example.photoweatherapp.add_weather_story.data_classes.WeatherModel
-import com.example.photoweatherapp.data_base.WeatherDao
 import com.example.photoweatherapp.data_base.entity.WeatherEntity
 
 class AddWeatherRepository(
     private val local: AddWeatherDataContract.Local
 ) : AddWeatherDataContract.Repository {
 
-    override fun getWeatherDao(): WeatherDao {
-        return local.getWeatherDao()
-    }
-
-    override fun saveWeatherInfo(model: WeatherModel) {
+    override suspend fun insert(model: WeatherModel) {
         val item = WeatherEntity(
-            imageByteArray = model.imageByteArray,
+            imageByteArray = model.imageByteArray.toString(),
             addPlaceName = model.addPlaceName,
             temperature = model.temperature,
             weatherCondition = model.weatherCondition
         )
-        val list = mutableListOf<WeatherEntity>()
-        list.add(item)
-        local.getWeatherDao().getWeatherList().value?.let { list.addAll(it) }
-        local.getWeatherDao().saveAllWeather(list)
+        local.insert(item)
     }
 
-    override fun getWeatherList(): List<WeatherModel>? {
+    override suspend fun getWeatherList(): List<WeatherModel>? {
 
         return local.getWeatherList()?.map {
             WeatherModel(
-                imageByteArray = it.imageByteArray,
+                imageByteArray = it.imageByteArray.toByteArray(),
                 addPlaceName = it.addPlaceName,
                 temperature = it.temperature,
                 weatherCondition = it.weatherCondition,
